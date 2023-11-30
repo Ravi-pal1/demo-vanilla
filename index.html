@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+
     <style>
       /* div {
         border: 1px solid black;
@@ -11,7 +13,7 @@
       } */
     </style>
   </head>
-  <body>
+  <body class="h-20 border border-l-amber-800">
     <form
       action="action.php"
       id="js-user-form"
@@ -23,6 +25,7 @@
         id="js-input"
         oninput="handleChange(this, event)"
         placeholder="Enter text...."
+        class="border"
       />
       <input
         type="text"
@@ -104,6 +107,7 @@
       //   false //bubbling
       // );
     </script>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script type="module" src="./src/app.js"></script>
   </body>
 </html>
