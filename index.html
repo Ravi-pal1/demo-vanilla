@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        border: 1px solid black;
+        padding: 40px;
+      } */
+    </style>
+  </head>
+  <body>
+    <form
+      action="action.php"
+      id="js-user-form"
+      onsubmit="return handleSubmit(this,event)"
+    >
+      <input
+        type="text"
+        name="first"
+        id="js-input"
+        oninput="handleChange(this, event)"
+        placeholder="Enter text...."
+      />
+      <input
+        type="text"
+        id="js-input"
+        name="second"
+        oninput="handleChange(this, event)"
+        placeholder="Enter text...."
+      />
+      <input
+        type="file"
+        name="file"
+        onchange="handleImageChange(this, event)"
+      />
+      <select name="role" id="js-role">
+        <option value="ADMIN">ADMIN</option>
+        <option value="USER">USER</option>
+        <option value="EMPLOYEE">EMPLOYEE</option>
+      </select>
+      <div>
+        Gender
+        <label
+          ><input type="radio" name="gender" value="female" /> Female</label
+        >
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="others" /> Other</label>
+      </div>
+      <div>
+        Section
+        <label><input type="radio" name="section" value="A" /> A</label>
+        <label><input type="radio" name="section" value="B" /> B</label>
+        <label><input type="radio" name="section" value="C" /> C</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- <div id="js-grandparent">
+      <div id="js-parent">
+        <div id="js-child">
+          <div id="js-jr"></div>
+        </div>
+      </div>
+    </div> -->
+    <script>
+      //   const el = document.querySelector("#js-grandparent")
+      //   document.querySelector("#js-grandparent").addEventListener(
+      //   "hover",
+      //   (e) => {
+      //       e.stopImmediatePropagation()
+      //     console.log("grand parent");
+      //   },
+      //   true //capturing
+      // );
+      // document.querySelector("#js-grandparent").addEventListener(
+      //   "click",
+      //   () => {
+      //     console.log("grand parent 2");
+      //   },
+      //   true //capturing
+      // );
+
+      // document.querySelector("#js-parent").addEventListener(
+      //   "click",
+      //   () => {
+      //     console.log("parent");
+      //   },
+      //   true //capturing
+      // );
+      // document.querySelector("#js-child").addEventListener(
+      //   "click",
+      //   () => {
+      //     console.log("child");
+      //   },
+      //   true //capturing
+      // );
+      // document.querySelector("#js-jr").addEventListener(
+      //   "click",
+      //   () => {
+      //     console.log("jr");
+      //   },
+      //   false //bubbling
+      // );
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
